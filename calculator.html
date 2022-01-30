@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        .buttons {
+            margin: 100px 600px 200px 400px;
+            background-color: rgb(53, 52, 52);
+            
+            padding: 20px 20px 20px 20px;
+            color:white
+        }
+        .display{
+            background-color: beige;
+            color: black;
+        }
+        .button:hover
+        {
+            background-color: rgb(247, 237, 223);
+            color: black;
+           
+        }
+        .button{
+            cursor: pointer;
+            /* border-top: 1px solid white;
+            /* border-left:1px solid white ; */
+            /* border-right: 1px solid white; */ 
+            background-color: rgb(53, 52, 52);
+            color: rgb(247, 237, 223);
+            padding: 15px 15px 15px 15px;
+            font-size: 20px;
+        }
+        /* .button-dot{
+width: 400px;
+        } */
+        .display
+        {
+            text-align: right;
+            font-size: 30px;
+            width: 100%;
+            height: 80px;
+        }
+        /* .display1
+        {
+            opacity: .4;
+        }
+        .display3
+        {
+            text-align: left;
+            opacity: .3;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <div >
+            <!-- <div class="display">
+                <div class="display1">
+                    0
+                </div>
+                <div class="display2" id="input">
+                    0
+                </div>
+                <div class="display3">
+                    0
+                                </div>
+            </div> -->
+            <input type="text"class="display"name="screen" id="screen">
+            
+ 
+
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button class=" button all clear"onclick="clr()"  style="width: 70px;">C</button>
+            <button class=" button last item" onclick="lastitem()"style="width: 70px;">CE</button>
+            <button class=" button operation" onclick="view('%')"style="width: 70px;">%</button>
+            <button class=" button operation" onclick="view('/')"style="width: 70px;">/</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button class=" button number" onclick="view('7')"style="width: 70px;">7</button>
+            <button class=" button number" onclick="view('8')"style="width: 70px;">8</button>
+            <button class=" button number" onclick="view('9')"style="width: 70px;">9</button>
+            <button class=" button operation" onclick="view('*')"style="width: 70px;">*</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button class=" button number" onclick="view('4')"style="width: 70px;">4</button>
+            <button class=" button number" onclick="view('5')"style="width: 70px;">5</button>
+            <button class=" button number" onclick="view('6')"style="width: 70px;">6</button>
+            <button class=" button operation" onclick="view('-')"style="width: 70px;">-</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button class=" button number"onclick="view('1')" style="width: 70px;">1</button>
+            <button class=" button number "onclick="view('2')" style="width: 70px;">2</button>
+            <button class=" button number" onclick="view('3')"style="width: 70px;">3</button>
+            <button class=" button operation"onclick="view('+')" style="width: 70px;">+</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <button class=" button number"onclick="view('0')" style="width: 150px;">0</button>
+            <button class=" button dot" onclick="view('.')"style="width: 150px;">.</button>
+            <button class=" button equal"onclick="equal()" style="width: 150px;">=</button>
+        </div>
+
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
